@@ -88,26 +88,9 @@ top() → returns s.top().first
 
 getMin() → returns s.top().second
 
-Dry Run Example
-Operations:
-
-cpp
-Copy code
-push(5) → stack = [(5,5)]
-push(6) → stack = [(5,5),(6,5)]
-push(3) → stack = [(5,5),(6,5),(3,3)]
-push(7) → stack = [(5,5),(6,5),(3,3),(7,3)]
-top() → 7
-
-getMin() → 3
-
-pop() → removes (7,3)
-
-Now top() → 3, getMin() → 3
 
 Code:
-cpp
-Copy code
+
 class MinStack {
 public:
     stack<pair<int,int>> s;
